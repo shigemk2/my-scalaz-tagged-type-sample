@@ -1,11 +1,13 @@
 package com.example
 
 import scalaz._
-import std.option._, std.list._
+
+sealed trait Foo
 
 object Hello {
   def main(args: Array[String]): Unit = {
-    println(Apply[Option].apply2(some(1), some(2))((a, b) => a + b))
+    // 中身はキャストしているだけ、値は同じままで型が変わる
+    println(Tag[String, Foo]("Hello, Scalaz"))
     println("Hello, world!")
   }
 }

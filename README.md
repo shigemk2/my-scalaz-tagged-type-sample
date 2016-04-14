@@ -1,5 +1,5 @@
-# my-scalaz-template
+# my-scalaz-tagged-type-sample
 
-A template using Scalaz for me.
+Iso/Prismと似てる型変換の手法 @@ Tagged Typeと言われる。
 
-https://github.com/scalaz/scalaz
+http://kxbmap.github.io/slides/scalaz-tagged-type/#1
